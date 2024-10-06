@@ -1,0 +1,4 @@
+{
+    "watch": ["src", "Public", "src/templates/partials"],
+    "ext": "js,hbs,html"
+  }

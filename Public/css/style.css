@@ -1,0 +1,143 @@
+body{
+    color: black;
+    font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+:root{
+    --tertiary-color:pink;
+    --secondary-color: #3B3F46;
+    --primary-color:#4d8076;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--primary-color);
+    font-weight: 600; 
+    margin-bottom: 1rem;
+}
+p{
+    color:var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+.navbar{
+background-color: var(--tertiary-color);
+}
+.hero{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.hero img{
+    width: 30vw;
+    border-radius: 10px;
+}
+.about{
+    height: 60vh;
+}
+.about img{
+    width: 30vw;
+    border-radius: 10px;
+}
+.btn{
+    background-color: yellow; /* Tomato color */
+    color: var(--primary-color);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.btn:hover{
+    background-color: var(--primary-color);
+}
+.special {
+    color: var(--primary-color);
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+.servicespecial{
+    color: var(--primary-color);
+}
+
+/* Services  Starts*/
+head,.card{cursor: pointer}.hd{font-size: 3rem;font-weight: 550}.card.hover, .card:hover{box-shadow: 0 20px 40px var(--tertiary-color)}.img{margin-bottom: 35px;-webkit-filter: drop-shadow(--tertiary-color);filter: drop-shadow(5px 5px 5px #222)}.card-title{font-weight: 600}button.focus, button:focus{outline: 0;box-shadow: none !important}.ft{margin-top: 25px}.chk{margin-bottom: 5px}.rck{margin-top: 20px;padding-bottom: 15px}
+.card-subtitle p{
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    line-height: normal;
+}
+.card-title{
+    color: var(--primary-color);
+}
+/* Services Ends */
+
+.map-container {
+    display: flex;
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+    height: 100vh;            /* Full viewport height, adjust as needed */
+}
+
+.map-container iframe {
+    max-width: 100%;          /* Ensure the map fits within the container */
+    max-height: 100%;         /* Ensure the map fits within the container */
+}
+.form-container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px; /* Add some padding if needed */
+}
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-outline {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-outline .form-control {
+    border: none;
+    box-shadow: none;
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-outline .form-label {
+    position: absolute;
+    top: -0.75rem;
+    left: 0.75rem;
+    background: white;
+    padding: 0 0.25rem;
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-outline .form-control:focus {
+    border-color:var(--tertiary-color);
+    outline: none;
+}
+
+.form-outline .form-control:focus + .form-label,
+.form-outline .form-control:not(:placeholder-shown) + .form-label {
+    top: -1.25rem;
+    font-size: 0.75rem;
+    color: var(--primary-color)
+}

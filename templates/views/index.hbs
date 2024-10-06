@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {{!-- Bootstrap CSS --}}
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  {{!-- Rendering Navbar --}}
+  
+    {{>navbar}}
+
+{{!-- Hero Section --}}
+
+  <div class="hero container">
+        <div class="row w-100">
+            <div class="col-6 d-flex align-items-center justify-content-start text-content">
+                <div>
+                    <h1 style="font-size: 3.5rem">We help You to <div>Grow your Business</div></h1>
+                    <p style="font-size:1.5rem">We are the Team Professional Developers</p>
+                    <button class="btn  fs-5 btn-lg">Read More</button>
+                </div>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-end">
+                <img src="../images/JPg.jpeg" class="w-80vw" alt="Hero Image" srcset="">
+            </div>
+        </div>
+    </div>
+  {{!-- Hero Section Ends --}}
+  
+  {{!-- About Us Start --}}
+
+        {{>about}}
+
+  {{!-- About Us Ends --}}
+  {{!-- Services Starts  --}}
+ {{>services}}
+  {{!-- Service Ends --}}
+
+{{!-- Map Starts --}}
+{{>map}}
+{{!-- Map Ends --}}
+
+
+
+
+{{!-- Contact Starts --}}
+<h1 class="text-center main-heading">Touch With Us</h1>
+<div class="form-container d-flex justify-content-center">
+    <form class="form" method="post" action="/contact">
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <input name="fname" type="text" id="form6Example1" class="form-control" />
+                    <label class="form-label" for="form6Example1">First name</label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <input name="lname" type="text" id="form6Example2" class="form-control" />
+                    <label class="form-label" for="form6Example2">Last name</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+            <input name="cname" type="text" id="form6Example3" class="form-control" />
+            <label class="form-label" for="form6Example3">Company name</label>
+        </div>
+
+        <!-- Text input -->
+        <div class="form-outline mb-4">
+            <input name="adress" type="text" id="form6Example4" class="form-control" />
+            <label class="form-label" for="form6Example4">Address</label>
+        </div>
+
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <input name="email" type="email" id="form6Example5" class="form-control" />
+            <label class="form-label" for="form6Example5">Email</label>
+        </div>
+
+        <!-- Number input -->
+        <div class="form-outline mb-4">
+            <input name="phone" type="number" id="form6Example6" class="form-control" />
+            <label class="form-label" for="form6Example6">Phone</label>
+        </div>
+
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+            <textarea name="ainfo" class="form-control" id="form6Example7" rows="4"></textarea>
+            <label class="form-label" for="form6Example7">Additional information</label>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+            <label class="form-check-label" for="form6Example8"> Create an account? </label>
+        </div>
+
+        <!-- Submit button -->
+        <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Place order</button>
+    </form>
+</div>
+
+{{!-- Contact Ends --}}
+    <script src="../jq/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+</body>
+</html>
